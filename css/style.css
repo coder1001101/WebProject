@@ -1,0 +1,75 @@
+@import 'utilities.css'; @import 'style_header.css';
+@import 'mobileview.css';
+@import 'computer.css';
+@import 'tabview.css';
+@import 'all.css';/*this is offline fontawesome link| also don't Delete webfonts folder | both are link*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.googlead img {width:200px; height:400px; 		}
+
+/*======================= Header styling ===========================================*/
+/* header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/1.jpg);
+	height:100vh; width:100vw; background-size: cover; background-position: center; }
+	.header-container {display: flex; flex-direction: row; float: left;}
+	.fa-bars {cursor: pointer;}
+	#navigation{border: 1px solid #c0392b; position:absolute; top:95%; left:1%;}
+	#navigation ul {float:left; list-style-type:none; margin-top:25px; margin-left: 10px;}
+	#navigation ul:last-child {padding-right: 40px;}
+	#navigation ul li {display: inline-block; }
+	#navigation ul li a {text-decoration:none; color:#fff; padding:5px 20px; border:1px solid transparent; transition: 0.6s ease; }
+	#navigation ul li a:hover {color:#000; }
+	#navigation ul li.active a {color: #000;}	
+	/* .webtitle a{text-decoration:none; color: rgba(61, 150, 120, 0.466);} */
+	/* .webtitle a {text-decoration: none; color: aqua;} */
+	/* .webtitle > span {font-size: 25px; color: rgba(35, 108, 192, 0.61);font-family: 'Open Sans', sans-serif;}
+	.hamburger-btn > .fa-bars, .fa-times {display: none;}
+	.menu-div { position: relative;		top: 0px;		z-index: 1; }
+	.menu-div > ul{ float:left; list-style-type:none; margin-top:25px; margin-left: 10px;}
+	.menu-div > ul:last-child {padding-right: 40px;}
+	.menu-div > ul > li { display:inline-block;}
+	.menu-div > ul > li > a { text-decoration:none; color:#fff; padding:5px 20px; 
+	border:1px solid transparent;  	transition: 0.6s ease;} */
+	/* .menu-div > ul > li > a:hover {  color:#000; }
+	.menu-div > ul > li.active > a {  color:#000;} */
+	/* .logo h3{ float:left; width:150px; height:auto; margin-top:10px; font-size: 30px; }
+	.logo h3 a {text-decoration: none; margin-left: 10px;}
+	.logo h3 a span {color: rgba(139, 36, 235, 0.507); font-family: 'VariableFont';}
+	/* .main{ max-width:1200px; margin:auto;} */
+	/* .title{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
+	.title h2 { color:rgba(245, 239, 239, 0.884); font-size:50px; }
+	#example1 {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+	.button{ position:absolute; top:65%; left:50%; 	transform:translate(-50%, -50%);}
+	.btn{ border: 1px solid #fff; padding: 10px 30px; color:#fff;	text-decoration:none; display: inline-block;  position: relative; 	transition:all 0.6s ease 0s;}
+	.btn::after{background:rgba(170, 52, 31, 0.61); content:""; position:absolute; top:0;	left:0; width:0%; height:100%; z-index:-1; transition : all 0.6s ease 0s;}
+	/* .btn:hover{ background-color:#fff; color:#000; } */
+	/* .btn:hover::after{ width:100%;}
+	#side_menu_btn {background-color: chocolate; }
+	.side-menu {border: 1px solid #c0392b; position:absolute;}
+	.side-menu ul {float:left; list-style-type:none; margin-top:25px; margin-left: 10px;}
+	.side-menu ul li {display: block; border-bottom:3px solid #000;}
+	.side-menu ul li:not(:last-child) {border-bottom: none;}
+	.side-menu ul li a {text-decoration:none; color:#fff; padding:5px 20px; border:1px solid transparent; transition: 0.6s ease;}
+	.side-menu ul li a:hover {color:#000;}
+	.marque	{position:absolute; top:99%; width: 100%; border: 1px solid rgba(255, 0, 0, 0.466);}
+	.marque marquee a{ text-decoration: none; color: rgb(247, 240, 240);}  */ 
+
+/*======================= End of header styling ===========================================*/
+	
+	.container{   flex-wrap: wrap; width:100%; height:auto; background-color: rgba(24, 22, 22, 0.637); margin-bottom:10px;			border-right:1px solid rgba(0, 60, 255, 0.541);}
+	.container div {display:flex; flex-direction:row; width:100%; height:auto;  overflow:auto;  border:1px solid rgba(70, 11, 233, 0.589);}
+	.container div > div {width:100%; height:auto; border:1px solid rgba(255, 0, 0, 0.61); float: left; padding: 10px;}
+
+	.right-div{display:flex; flex-direction:column; }
+	.right-div div {width:100%; height:auto; border:1px solid rgba(0, 0, 255, 0.61);}
+	
+	footer{width:100%; background-color:rgba(24, 22, 22, 0.74); padding-bottom: 10px;}
+	
+	.copywrite h6 { text-align: center; text-decoration: none;}
+	.copywrite h6 a {text-decoration: none; text-size-adjust: 20px;}
+
+
+
+
+
+
