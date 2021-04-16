@@ -1,0 +1,14 @@
+:root{	--dark: #faf6f6;	--light: rgba(8, 8, 8, 0.849);
+	/* HOW TO USE THIS COLOR CODE open css file and type color:var(--light);
+	How to import utilities.css file in style.css file 
+	 	type in style.css file in :
+		@import 'utilities.css';
+	*/
+}
+@font-face { font-family: VariableFont; src: url('../fonts/VariableFont.ttf'); }
+	
+	*{margin:0;	padding:0;	box-sizing: border-box;	font-family: 'Poppins', sans-serif, arial ;	}
+	body {	background : var(--dark);	color : var(--light);	text-align:center;}
+	
+	
+	
