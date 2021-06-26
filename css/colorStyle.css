@@ -1,0 +1,47 @@
+/* There are all types of color classes*/
+/* import  this css file in your style.css or link this css file in your html file and use */
+ */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+.red { background: red; color: white; }
+.green { background: green; color: white; }
+.black { background: black; color: white; }
+.blue { background: blue; color: white; }
+.yellow { background: yellow; color: white; }
+.pink { background: pink; color: white; }
+.white { background: white; color: black; }
+.orange { background: orange; color: black; }
+.gray { background: gray; color: white; }
+.lnear-gradient57deg { background: linear-gradient(57deg, #00C6A7, #1E4D92); color: white;}
+.linear-gradeint110deg { background: linear-gradeint(110deg, transparent, #75ed639f, transparent); color: white; }
+.border1px { border: 1px solid #76ed63;}
+.border2px { border: 2px solid #76ed63;}
+.border3px { border: 3px solid #76ed63;}
+.border4px { border: 4px solid #76ed63;}
+.border5px { border: 5px solid #76ed63;}
+
+
+
+
+

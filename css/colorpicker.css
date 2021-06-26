@@ -1,0 +1,17 @@
+:root{
+    --bg-blue: #0d6efd;
+    --bg-indigo: #6610f2;
+}
+.red{background: red; color: white;}
+.green {background: green; color: white;}
+.black {background: black; color: white;}
+.blue {background: blue; color: white;}
+.yellow {background: yellow; color: white;}
+.pink {background: pink; color: white;}
+.white {background: white; color: black;}
+.orange {background: green; color: white;}
+.gray {background: green; color: white;}
+.linear-gradient57deg {background: linear-gradient(57deg, #00C6A7, #1e4d92); color: white;}
+.linear-gradient110deg {background: linear-gradient(110deg, transparent, #75ed639f, transparent); color: white;}
+
+
