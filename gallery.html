@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mygallery gallery myphotos phototos">
+    <meta name="keywords" content="mygallery gallery myphotos phototos coder1001101">
+    <meta name="author" content="coder1001101">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- <meta http-equiv="refresh" content="15"> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>::Gallery::</title>
+<!-- Bootstrap5.0 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .photo-grid-container{
+			column-count:5;
+			column-width:200px;
+			column-gap:5px;
+			width:100%;
+			max-width:1600px;
+			margin:auto;
+        }
+        .photo-grid-item{
+			margin:0 auto 5px;
+			width:100%;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.carousel').carousel({
+                interval: 3000
+            });
+        })
+    </script>
+</head>
+<body>
+<!-- All header styling -->
+<div id="header" style="position: relative;">
+        <div>
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider/slider1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label </h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider/slider2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label </h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider/slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label </h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider/slider4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Forth slide label </h5>
+                  <p>Some representative placeholder content for the third slide.</p>  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous </span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next </span>
+              </button>
+       
+            </div>
+          </div> 
+          <div style=" width: 100%; height: 20px; position: absolute; top:0; left: 0; z-index: 1 !important;" >
+            <div class="row">
+              <div class="col-md-6 text-white px-3 ">
+                    welcome my web suport<a href="https://instagram.com/coder1001101" target="_blank" rel="noopener noreferrer">@coder1001101</a>
+              </div>
+              <div class="col-md-6 text-white px-2 justify-content-end">
+                floow us:
+                <a href="https://facebook.com/coder1001101" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/coder1001101" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/coder1001101" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                <a href="https://coder1001101.github.io/WebProject/login.php" class="text-white ">Login / Register</a>
+              </div>
+            </div>
+          </div> 
+          <div id="navbar" style=" width: 100%; position: absolute; top: 25px; left:0; z-index: 1 !important;">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                 <a href="https://coder1001101.github.io/WebProject/" class="navbar-brand nav-link "><img src="images/logo/SGN_056.png" alt="" style="width: 30px; height: 30px;">Coder1001101</a>
+              <button class="navbar-toggler " data-toggle="collapse" data-target="#mynav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav mr-auto nav-justified">
+                  <li class="nav-item active"><a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Home</a></li>
+                  <li class="nav-item"><a href="https://coder1001101.github.io/WebProject/gallery.html" class="nav-link text-center">Gallery</a></li>
+                  <li class="nav-item"><a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">About</a></li>
+                  <li class="nav-item"><a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Contect</a></li>
+                  <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle text-center" data-toggle="dropdown">More</a>
+                    <div class="dropdown-menu bg-dark">
+                      <a href="https://coder1001101.github.io/WebProject/" class="dropdown-item nav-link text-center">Contect us</a>
+                      <a href="https://coder1001101.github.io/WebProject/faq.html" class="dropdown-item nav-link text-center">FAQs</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div> 
+       </div>
+</div>
+<!-- Main Container ========================================-->
+<div class="container" id="content">
+    <div class="row">
+      <div class="col p-1">
+        <section class="photo-grid-container">
+          <img class="photo-grid-item" src = "images/pexels-1.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/450x800" />
+          <img class="photo-grid-item" src = "images/pexels-2.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x300" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x400" />
+          <img class="photo-grid-item" src = "images/slider/slider3.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x500" />
+          <img class="photo-grid-item" src = "images/slider/slider1.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x700" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/500x300" />
+          <img class="photo-grid-item" src = "images/pexels-3.jpg" />
+          <img class="photo-grid-item" src = "images/pexels-4.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x650" />
+          <img class="photo-grid-item" src = "images/pexels-1.jpg" />
+          <img class="photo-grid-item" src = "images/pexels-2.jpg" />
+          <img class="photo-grid-item" src = "https://pexels.com/photo/woman-in-gray-coat-standing-7738003/" />
+          <img class="photo-grid-item" src = "https://pexels.com/photo/woman-in-red-coat-standing-near-white-wall-3775067/" />
+          <img class="photo-grid-item" src = "images/slider/slider1.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x550" />
+          <img class="photo-grid-item" src = "images/slider/slider3.jpg" />
+          <img class="photo-grid-item" src = "images/slider/slider2.jpg" />
+          <img class="photo-grid-item" src = "https://source.unsplash.com/random/300x600" />
+          <img class="photo-grid-item" src = "images/slider/slider4.jpg" />
+                        
+        </section>
+      </div>
+    </div>
+</div>
+<!-- Footer =================================================================-->
+<div class="container-fluid" id="footer">
+    <div class="row bg-info text-white" id="footer">
+          <div class="col-lg p-1">
+            <h6 class="text-center">Socel</h6>
+            <ul class="navbar-nav mr-auto nav-justified">
+              <li class="nav-item"><a href="https://github.com/coder1001101/" class="nav-link text-center"><i class="fa fa-github"></i></a></li>
+              <li class="nav-item"><a href="https://telegram.com/coder1001101/" class="nav-link text-center"><i class="fad fa-telegram"></i></a></li>
+              <li class="nav-item"><a href="https://instagram.com/coder1001101/" class="nav-link text-center"><i class="fa fa-instagram"></i></a></li>
+              <li class="nav-item"><a href="https://facebook.com/coder1001101/" class="nav-link text-center"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg p-1">
+            <h6 class="text-center">Use Cases</h6>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Graphic design</a>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Contect us</a>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">About</a>
+          </div>
+          <div class="col-lg p-1">
+            <h6 class="text-center">Resources</h6>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Privacy Policy</a>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Feedback</a>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Status</a>
+              <a href="https://coder1001101.github.io/WebProject/" class="nav-link text-center">Terms & Conditios</a>
+          </div>
+        </div>
+        <div class="row bg-primary" id="footer-bootem">
+          <div class="col-12 text-center user-selection py-1">
+            <h6 class="pr-1 text-white">suppot:<a href="https://coder1001101.github.io/WebProject/" class="">@coder1001101</a>&copy2021. All Rights Reserved.
+              <a href="https://coder1001101.github.io/WebProject/" class="pr-1">Privace Policy</a>|<a href="https://coder1001101.github.io/WebProject/" class="pr-1">Terms of Service</a></h6>
+          </div>
+        </div>    
+</div>
+</body>
+</html>
