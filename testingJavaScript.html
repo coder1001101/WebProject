@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="refresh" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>testing2</title>
+<style>  
+*{ margin: 0;padding: 0; box-sizing: border-box; }
+html{ background: url('images/pexels-1.jpg')no-repeat left top ; background-size: cover;}
+body{/* min-height: 100vh;*/ width: 100vw; margin: 0;
+    background: linear-gradient(135deg, rgba(6,120,6,0.607), rgba(0,0,255,0.506)), 
+    url('images/pexels-2.jpg') no-repeat center center / cover;
+  }
+	p.blue { margin: 4px;font-size: 16px; font-weight: bolder; cursor: pointer;  }  
+	.blue {  color: black; }  
+	.highlight {	background: pink;	} 
+  .intro {font-size: 200%; color: red;}  
+  #panel, #flip {  
+				padding: 5px;  
+				text-align: center;  
+				background-color: #de45a3;  
+				border: solid 1px #c3c3c3;  
+			}  
+	#panel {  
+				padding: 50px;  
+				display:none;  
+			}  
+  input[type="text"]{
+        padding: 10px;
+        border: 4px solid linear-gradient(35deg, rgba(228,12,12,0.776),  rgba(15,243,15,0.697), rgba(49,49,235,0.717));
+      }
+  .first{background: green;}
+  .second{ background: pink;}
+</style>  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>    
+	  $(document).ready(function(){    
+		  $(".toggleBtn").click(function(){    
+			  $("div#demo").toggle();    
+		  });    
+	  });  
+	  $(document).ready(function(){  
+			$(".toggleBtnAnimted").click(function(){  
+				$("div#demo").toggle(1000);  
+			});  
+		});     
+  </script> 
+  </head>
+<body>
+  <div style="background:gray; padding:0 10px;margin-top:0;">
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can show hidden HTML elements.</p>
+    
+    <nav class="navbat">
+      <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me! to show div</button>
+      <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me! to hide div</button>
+      <button class="toggleBtn" >Click Me! to Hide and Show Toggle Button </button>
+      <button class="toggleBtnAnimted">Click Me! to hide and show Toggle Button With Animation </button>
+  
+    </nav>
+  </div>
+
+<div id="demo" style="display:none; background:linear-gradient(110deg, rgba(255,0,0,0.545), rgba(42,42,236,0.652));padding:5px 10px">
+  <div>
+    <p id="demo1">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me! to change font size</button>
+  </div>
+  <hr>
+  <div>
+   <script>  
+			$(document).ready(function(){  
+				$("button.exa11").click(function(){
+					$("#div1").fadeToggle();  
+					$("#div2").fadeToggle("slow");  
+					$("#div3").fadeToggle(3000);  
+				});  
+			});  
+		</script>  
+    <p>See the fadeToggle() method example with different parameters.</p>  
+		<button class="exa11">Click to fade Toggle boxes</button><br><br>
+		<div style="display:flex;">
+		  <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>  
+		  <div id="div2" style="width:80px;height:80px;background-color:green; margin: 0 5px;"></div><br>  
+		  <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>  
+    </div>
+  </div>
+  <hr>
+  <div>
+    <script>   
+			$(document).ready(function(){  
+				$("#flip").click(function(){  
+					$("#panel").slideToggle("slow");  
+				});  
+			});  
+		</script> 
+    <div id="flip">
+      Click to slide toggle panel
+    </div>  
+		<div id="panel">
+		  Hello Technoapps Development!<br>
+		  It is the best tutorial website to learn jQuery and other languages.
+		</div>  
+  </div>
+  <hr>
+  <div>
+    <script>  
+			$(document).ready(function(){  
+				$("button.exa1").click(function(){  
+					$("p.exa1").addClass("intro");  
+				});  
+			});  
+		</script>  
+		<p class="exa1">This is a paragraph.</p>  
+		<p>This is another paragraph.</p>  
+		<button class="exa1">Add a class name to the first p element</button>  
+  </div>
+  <hr>
+  <div>
+    <h3>Hover your mouse pointer on me!</h3> 
+    <script>  
+			$(document).ready(function(){  
+				$("h3").hover(function(){  
+					$(this).css("background-color", "violet");  
+				}, function(){  
+					$(this).css("background-color", "green");  
+				});  
+			}); 
+    </script>  
+  </div>
+  <hr>
+  <div>
+    <div>
+      <p class="blue highlight">https://coder1001101.github.io/WebProject/</p>  
+		  <p class="blue">Java Tutorial</p>  
+		  <p class="blue">SQL Tutorial</p>  
+		  <p class="blue">Android Tutorial</p>  
+		  <p class="blue">HTML Tutorial</p>  
+		  <p class="blue">etc.</p>  
+		<script>  
+			$("p").click(function() {  
+				$(this).toggleClass("highlight");  
+			});  
+		</script>  
+    </div>
+  </div>
+  <hr>
+  <div>
+    <script>  
+			$(document).ready(function(){  
+				$("h4,h5,h6").click(function(){  
+					$(this).hide();  
+				});  
+			});  
+		</script>  
+    <h4>This heading will disappear if you click on this.</h4>  
+		<h5>I will also disappear.</h5>  
+		<h6>Me too.</h6>  
+  </div>
+  <hr>
+  <div>
+    <input type="text" name="user" id="user" placeholder="     " />
+  </div>
+  <hr>
+  <div>
+      <h2>jQuery Addclass RemoveClass methods</h2>
+    <div id="box">
+      <p>this is testing text</p>
+    </div>
+    <button id="addclass">Add Class</button>
+    <button id="removeclass">Remove Class</button>
+    <button id="toggleclass">toggle Class</button>
+    <button id="addStyle">Add css style</button>
+    <script type="text/javascript" charset="utf-8">
+      $('#addclass').click(function(){
+        $('#box,h2').addClass("first second");
+      });
+      $('#removeclass').click(function(){
+        $('#box').removeClass("second");
+      });
+      $('#toggleclass').click(function(){
+        $('#box').toggleClass("second");
+      });
+      $(document).ready(function(){
+        $("#addStyle").click(function(){
+          $('#box').css({"background":"red","color":"white","border":"2px dotted green"});
+        });
+      });
+    </script>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.7.0/d3.min.js"></script>
+</body>
+</html> 
